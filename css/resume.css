@@ -1,0 +1,176 @@
+﻿/* RESUME PAGE */
+.res-page{
+  padding-bottom:80px;
+}
+
+/* ---- HEADER ---- */
+.res-header{
+  padding:56px 0 40px;
+  border-bottom:1px solid #EBEBEB;
+}
+.res-header-inner{
+  display:flex;align-items:flex-start;
+  justify-content:space-between;gap:32px;
+}
+.res-name{
+  font-family:'Funnel Display',system-ui;
+  font-size:44px;font-weight:700;color:#111111;
+  letter-spacing:-0.022em;line-height:1.1;
+  margin-bottom:6px;
+}
+.res-role-title{
+  font-size:15px;font-weight:500;color:#737373;
+  margin-bottom:18px;letter-spacing:0.01em;
+}
+.res-contact-row{
+  display:flex;align-items:center;flex-wrap:wrap;gap:14px;
+  font-size:13px;color:#525252;
+}
+.res-dot{color:#D4D4D4}
+.res-link{
+  color:#525252;text-decoration:none;
+  transition:color 160ms ease;
+}
+.res-link:hover{color:#111111}
+.res-contact-plain{color:inherit;text-decoration:none}
+.res-linkedin{
+  color:var(--text);text-decoration:none;
+  display:inline-flex;align-items:center;gap:3px;
+  border-bottom:1px solid var(--btn-secondary-border);
+  transition:color 180ms ease,border-bottom-color 180ms ease;
+}
+.res-linkedin:hover{color:var(--accent-text);border-bottom-color:var(--accent-text)}
+.res-download{white-space:nowrap;flex-shrink:0;margin-top:4px}
+
+/* ---- BODY GRID ---- */
+.res-body{
+  display:grid;
+  grid-template-columns:1fr 300px;
+  gap:72px;
+  align-items:start;
+  padding-top:48px;
+}
+.res-main{max-width:655px}
+
+/* ---- SECTIONS ---- */
+.res-section{margin-bottom:40px}
+.res-section:last-child{margin-bottom:0}
+.res-section > .sec-label-eyebrow{margin-bottom:18px}
+
+/* ---- SUMMARY ---- */
+.res-summary{
+  font-size:14px;font-weight:400;color:#525252;
+  line-height:1.8;max-width:588px;
+}
+
+/* ---- EXPERIENCE ---- */
+.res-exp-list{display:flex;flex-direction:column}
+.res-exp-item{
+  padding:24px 0;
+  border-bottom:1px solid #F5F5F5;
+}
+.res-exp-item:first-child{padding-top:0}
+.res-exp-item:last-child{border-bottom:none;padding-bottom:0}
+.res-exp-header{
+  display:flex;justify-content:space-between;
+  align-items:flex-start;gap:16px;
+  margin-bottom:34px;
+}
+.res-exp-role{
+  font-size:13.5px;font-weight:600;color:#111111;
+  margin-bottom:14px;
+}
+.res-exp-company{
+  font-size:12.5px;font-weight:400;color:#737373;
+}
+.res-exp-date{
+  font-size:11.5px;font-weight:500;color:#A3A3A3;
+  white-space:nowrap;flex-shrink:0;
+  background:#F5F5F5;padding:4px 9px;
+  border-radius:3px;margin-top:0;
+}
+
+/* ---- BULLET LISTS ---- */
+.res-bullets{list-style:none;display:flex;flex-direction:column;gap:7px}
+.res-bullets li{
+  font-size:13px;font-weight:400;color:#525252;
+  line-height:1.65;padding-left:16px;position:relative;
+}
+.res-bullets li::before{
+  content:'';position:absolute;left:0;top:8px;
+  width:4px;height:4px;border-radius:50%;background:#D4D4D4;
+}
+
+/* ---- SIDEBAR ---- */
+.res-sidebar{
+  background:#FAFAFA;border:1px solid #EBEBEB;
+  border-radius:10px;padding:28px;
+  display:flex;flex-direction:column;gap:0;
+}
+.res-sidebar .res-section{
+  padding-bottom:28px;
+  border-bottom:1px solid #F0F0F0;
+  margin-bottom:28px;
+}
+.res-sidebar .res-section:last-child{
+  border-bottom:none;margin-bottom:0;padding-bottom:0;
+}
+
+/* ---- SKILLS TAGS ---- */
+.res-tags{display:flex;flex-wrap:wrap;gap:6px}
+.res-tags .tag{
+  display:inline-flex;align-items:center;
+  white-space:nowrap;line-height:1;
+  padding:5px 10px;
+}
+
+/* ---- EDUCATION ---- */
+.res-edu-list{list-style:none;display:flex;flex-direction:column}
+.res-edu-item{
+  display:flex;flex-direction:column;gap:3px;
+  padding:10px 0;border-bottom:1px solid #F5F5F5;
+}
+.res-edu-item:first-child{padding-top:0}
+.res-edu-item:last-child{border-bottom:none;padding-bottom:0}
+.res-edu-deg{font-size:12.5px;font-weight:600;color:#111111}
+.res-edu-inst{font-size:12px;font-weight:400;color:#737373;line-height:1.5}
+
+/* ---- FOOTER ---- */
+.res-footer{
+  border-top:1px solid #F0F0F0;
+  padding:24px 0;
+  display:flex;align-items:center;justify-content:space-between;
+  margin-top:16px;
+}
+.res-footer span{font-size:12px;font-weight:400;color:#A3A3A3}
+.res-back{
+  font-size:12.5px;font-weight:500;color:#737373;
+  text-decoration:none;transition:color 160ms ease;
+}
+.res-back:hover{color:#111111}
+
+/* ---- DOWNLOAD ARROW ---- */
+.dl-arrow{display:inline-block;transition:transform 190ms ease}
+.nav-resume:hover .dl-arrow{transform:translateY(2px)}
+
+/* ---- RESPONSIVE ---- */
+@media(max-width:768px){
+  .res-page{padding-bottom:60px}
+  .res-body{grid-template-columns:1fr;gap:0}
+  .res-sidebar{border-radius:8px;margin-top:8px}
+  .res-header-inner{flex-direction:column;gap:20px}
+  .res-name{font-size:32px}
+  .res-footer{flex-direction:column;gap:12px;text-align:center}
+}
+
+@media(max-width:600px){
+  .res-name{font-size:26px}
+  .res-role-title{font-size:13.5px}
+  .res-contact-row{gap:10px;font-size:12px}
+  .res-dot{display:none}
+  .res-contact-item{display:block}
+  .res-contact-row{flex-direction:column;align-items:flex-start;gap:6px}
+  .res-section{margin-bottom:28px}
+  .res-exp-header{flex-direction:column;gap:3px}
+  .res-exp-date{font-size:11px}
+}

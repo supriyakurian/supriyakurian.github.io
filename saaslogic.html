@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saaslogic Case Study &mdash; Supriya Kurian</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/casestudy.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a class="nav-logo" href="index.html" style="text-decoration:none">STK Portfolio</a>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html#work">Work</a>
+      <a class="nav-link" href="index.html#about">About</a>
+      <a class="nav-link" href="index.html#contact">Contact</a>
+      <a class="nav-resume" href="resume.html">View Resume</a>
+    </div>
+  </div>
+</nav>
+
+<main class="cs-page container" data-cs-id="saaslogic">
+
+  <!-- ══ HERO ══ -->
+  <header class="cs-hero">
+    <a class="cs-back" href="index.html"><span class="cs-back-arr">&#8592;</span><span class="cs-back-text">Back to Portfolio</span></a>
+    <p class="sec-label-eyebrow">Case Study &middot; SaaS &middot; Workflow Design</p>
+    <h1 class="cs-title">Saaslogic &mdash; Subscription Workflow Redesign</h1>
+    <p class="cs-subtitle">Reduced a multi-step subscription process into a single-page workflow &mdash; cutting context switching and improving task efficiency for operational users</p>
+    <div class="cs-meta">
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">Role</span>
+        <span class="cs-meta-value">Product Designer</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">Platform</span>
+        <span class="cs-meta-value">Web (B2B + B2C)</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">Scope</span>
+        <span class="cs-meta-value">End-to-end workflow redesign</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══ FINAL DESIGN SHOWCASE ══ -->
+  <section class="cs-final-showcase">
+    <p class="sec-label-eyebrow">Final Design</p>
+    <div class="cs-final-img-wrap">
+      <button class="cs-step-expand" data-img="assets/images/saaslogic-final-subscription-workflow.png" data-title="Final Design — Single-page Subscription Workflow" aria-label="Expand Final Design to fullscreen">
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 4V1h3M7 1h3v3M10 7v3H7M4 10H1V7"/></svg>
+      </button>
+      <div class="cs-final-scroll">
+        <div class="cs-final-img-inner">
+          <img
+            class="cs-final-image"
+            src="assets/images/saaslogic-final-subscription-workflow.png"
+            alt="Final single-page subscription workflow for Saaslogic"
+          >
+          <button class="cs-callout-pin" data-pin="1" style="top:7%;left:4%" aria-label="Callout 1: Single-page workflow">1</button>
+          <button class="cs-callout-pin" data-pin="2" style="top:13%;left:78%" aria-label="Callout 2: Persistent order summary">2</button>
+          <button class="cs-callout-pin" data-pin="3" style="top:47%;left:31%" aria-label="Callout 3: Inline editing">3</button>
+          <button class="cs-callout-pin" data-pin="4" style="top:29%;left:15%" aria-label="Callout 4: Context preservation">4</button>
+        </div>
+      </div>
+    </div>
+    <ul class="cs-callout-legend">
+      <li data-pin="1"><span class="cs-callout-num">1</span> Single-page workflow — entire subscription process available on one screen.</li>
+      <li data-pin="2"><span class="cs-callout-num">2</span> Persistent order summary — billing context stays visible while configuring.</li>
+      <li data-pin="3"><span class="cs-callout-num">3</span> Inline editing — modify products, plans and add-ons without navigating away.</li>
+      <li data-pin="4"><span class="cs-callout-num">4</span> Context preservation — users never lose their place while configuring subscriptions.</li>
+    </ul>
+    <p class="cs-final-caption">Final single-page subscription workflow designed to reduce navigation, preserve context, and help operational users complete subscription setup more efficiently.</p>
+  </section>
+
+  <!-- ══ 1 · CHALLENGE ══ -->
+  <section class="cs-section">
+    <p class="sec-label-eyebrow">Challenge</p>
+    <h2 class="cs-section-heading">Operational users were losing time to the workflow itself</h2>
+    <p class="cs-body-text">Customer success teams needed to complete subscription setup quickly, but the existing multi-step workflow required constant navigation and context switching.</p>
+    <ul class="cs-list-cross">
+      <li>Multiple screens required to complete one subscription</li>
+      <li>Workflow required users to move across multiple steps even for simple tasks</li>
+      <li>Key information was distributed across steps, requiring users to navigate to access it</li>
+      <li>Errors forced users to restart the entire process</li>
+    </ul>
+    <blockquote class="cs-insight">
+      <span class="cs-insight-label">Key Insight</span>
+      <p>&ldquo;Operational users preferred speed over guided steps.&rdquo;</p>
+    </blockquote>
+  </section>
+
+  <!-- ══ 2 · INITIAL APPROACH ══ -->
+  <section class="cs-section cs-act-break">
+    <p class="sec-label-eyebrow">Initial Approach</p>
+    <h2 class="cs-section-heading">The first design: a guided step-by-step flow</h2>
+    <p class="cs-body-text">I initially designed a guided, progressive workflow based on common SaaS patterns &mdash; breaking the setup process into six sequential steps:</p>
+
+    <div class="cs-workflow">
+      <div class="cs-workflow-step">
+        <span class="cs-workflow-num">01</span>
+        <span class="cs-workflow-label">Customer</span>
+      </div>
+      <span class="cs-workflow-arrow">&#8594;</span>
+      <div class="cs-workflow-step">
+        <span class="cs-workflow-num">02</span>
+        <span class="cs-workflow-label">Product</span>
+      </div>
+      <span class="cs-workflow-arrow">&#8594;</span>
+      <div class="cs-workflow-step">
+        <span class="cs-workflow-num">03</span>
+        <span class="cs-workflow-label">Plan</span>
+      </div>
+      <span class="cs-workflow-arrow">&#8594;</span>
+      <div class="cs-workflow-step">
+        <span class="cs-workflow-num">04</span>
+        <span class="cs-workflow-label">Add-ons</span>
+      </div>
+      <span class="cs-workflow-arrow">&#8594;</span>
+      <div class="cs-workflow-step">
+        <span class="cs-workflow-num">05</span>
+        <span class="cs-workflow-label">Attributes</span>
+      </div>
+      <span class="cs-workflow-arrow">&#8594;</span>
+      <div class="cs-workflow-step">
+        <span class="cs-workflow-num">06</span>
+        <span class="cs-workflow-label">Checkout</span>
+      </div>
+    </div>
+
+    <div class="cs-step-grid">
+
+      <div class="cs-step-card">
+        <div class="cs-step-meta">
+          <span class="cs-step-num">01</span>
+          <span class="cs-step-title">Customer</span>
+        </div>
+        <div class="cs-step-img-wrap">
+          <button class="cs-step-expand" data-img="assets/images/saaslogic-step-01-customer.png" data-title="Step 01 — Customer" aria-label="Expand Step 01 — Customer to fullscreen">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 4V1h3M7 1h3v3M10 7v3H7M4 10H1V7"/></svg>
+          </button>
+          <img src="assets/images/saaslogic-step-01-customer.png" alt="Step 01 — Customer selection screen">
+        </div>
+      </div>
+
+      <div class="cs-step-card">
+        <div class="cs-step-meta">
+          <span class="cs-step-num">02</span>
+          <span class="cs-step-title">Product</span>
+        </div>
+        <div class="cs-step-img-wrap">
+          <button class="cs-step-expand" data-img="assets/images/saaslogic-step-02-product.png" data-title="Step 02 — Product" aria-label="Expand Step 02 — Product to fullscreen">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 4V1h3M7 1h3v3M10 7v3H7M4 10H1V7"/></svg>
+          </button>
+          <img src="assets/images/saaslogic-step-02-product.png" alt="Step 02 — Product selection screen">
+        </div>
+      </div>
+
+      <div class="cs-step-card">
+        <div class="cs-step-meta">
+          <span class="cs-step-num">03</span>
+          <span class="cs-step-title">Plan</span>
+        </div>
+        <div class="cs-step-img-wrap">
+          <button class="cs-step-expand" data-img="assets/images/saaslogic-step-03-plan.png" data-title="Step 03 — Plan" aria-label="Expand Step 03 — Plan to fullscreen">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 4V1h3M7 1h3v3M10 7v3H7M4 10H1V7"/></svg>
+          </button>
+          <img src="assets/images/saaslogic-step-03-plan.png" alt="Step 03 — Plan selection screen">
+        </div>
+      </div>
+
+      <div class="cs-step-card">
+        <div class="cs-step-meta">
+          <span class="cs-step-num">04</span>
+          <span class="cs-step-title">Add-ons</span>
+        </div>
+        <div class="cs-step-img-wrap">
+          <button class="cs-step-expand" data-img="assets/images/saaslogic-step-04-addons.png" data-title="Step 04 — Add-ons" aria-label="Expand Step 04 — Add-ons to fullscreen">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 4V1h3M7 1h3v3M10 7v3H7M4 10H1V7"/></svg>
+          </button>
+          <img src="assets/images/saaslogic-step-04-addons.png" alt="Step 04 — Add-ons selection screen">
+        </div>
+      </div>
+
+      <div class="cs-step-card">
+        <div class="cs-step-meta">
+          <span class="cs-step-num">05</span>
+          <span class="cs-step-title">Attributes</span>
+        </div>
+        <div class="cs-step-img-wrap">
+          <button class="cs-step-expand" data-img="assets/images/saaslogic-step-05-attributes.png" data-title="Step 05 — Attributes" aria-label="Expand Step 05 — Attributes to fullscreen">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 4V1h3M7 1h3v3M10 7v3H7M4 10H1V7"/></svg>
+          </button>
+          <img src="assets/images/saaslogic-step-05-attributes.png" alt="Step 05 — Attributes configuration screen">
+        </div>
+      </div>
+
+      <div class="cs-step-card">
+        <div class="cs-step-meta">
+          <span class="cs-step-num">06</span>
+          <span class="cs-step-title">Checkout</span>
+        </div>
+        <div class="cs-step-img-wrap">
+          <button class="cs-step-expand" data-img="assets/images/saaslogic-step-06-checkout.png" data-title="Step 06 — Checkout" aria-label="Expand Step 06 — Checkout to fullscreen">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 4V1h3M7 1h3v3M10 7v3H7M4 10H1V7"/></svg>
+          </button>
+          <img src="assets/images/saaslogic-step-06-checkout.png" alt="Step 06 — Checkout screen">
+        </div>
+      </div>
+
+    </div>
+    <p class="cs-caption">Plan comparison and Add-on dual-panel interactions were designed to support decision-making within each step.</p>
+  </section>
+
+  <!-- ══ 3 · WHY IT DIDN'T WORK ══ -->
+  <section class="cs-section">
+    <p class="sec-label-eyebrow">Why It Didn&rsquo;t Work</p>
+    <h2 class="cs-section-heading">The flow worked for new users &mdash; not experienced ones</h2>
+    <ul class="cs-list-cross">
+      <li>Forced step-by-step progression slowed down experienced users</li>
+      <li>Navigation between steps interrupted task flow</li>
+      <li>Referencing or updating previous selections required additional navigation</li>
+      <li>Progress indicators added little value for users familiar with the workflow</li>
+    </ul>
+  </section>
+
+  <!-- ══ 4 · DESIGN SHIFT ══ -->
+  <section class="cs-section">
+    <p class="sec-label-eyebrow">Design Shift</p>
+    <h2 class="cs-section-heading">The pivot: from guided steps to everything in one place</h2>
+    <div class="cs-pivot">
+      <p class="cs-pivot-text">Based on feedback from customer success teams, the workflow was redesigned into a single-page experience that allowed users to view and edit all selections in one place. The goal shifted from guiding users step-by-step to enabling faster task completion for experienced users.</p>
+    </div>
+  </section>
+
+  <!-- ══ 5 · FINAL SOLUTION ══ -->
+  <section class="cs-section cs-act-break">
+    <p class="sec-label-eyebrow">Final Solution</p>
+    <h2 class="cs-section-heading">One page. All context. Fully editable.</h2>
+    <p class="cs-body-text">The redesigned workflow collapsed all six steps into a single page, giving users complete visibility and control without navigating away.</p>
+    <div class="cs-ba-wrapper">
+      <div class="cs-ba-col cs-ba-before-col">
+        <div class="cs-ba-header">
+          <span class="cs-ba-tag cs-ba-tag-before">Before</span>
+          <p class="cs-ba-title">Multi-step Guided Flow</p>
+        </div>
+        <div class="cs-ba-visual cs-ba-collage">
+          <img src="assets/images/saaslogic-step-01-customer.png" alt="Step 01 — Customer">
+          <img src="assets/images/saaslogic-step-02-product.png" alt="Step 02 — Product">
+          <img src="assets/images/saaslogic-step-03-plan.png" alt="Step 03 — Plan">
+          <img src="assets/images/saaslogic-step-04-addons.png" alt="Step 04 — Add-ons">
+          <img src="assets/images/saaslogic-step-05-attributes.png" alt="Step 05 — Attributes">
+          <img src="assets/images/saaslogic-step-06-checkout.png" alt="Step 06 — Checkout">
+        </div>
+        <ul class="cs-list-cross cs-list-sm">
+          <li>Multiple steps required</li>
+          <li>Linear progression only</li>
+          <li>Limited visibility</li>
+        </ul>
+      </div>
+      <div class="cs-ba-divider">
+        <span class="cs-ba-arrow">&#8594;</span>
+      </div>
+      <div class="cs-ba-col cs-ba-after-col">
+        <div class="cs-ba-header">
+          <span class="cs-ba-tag cs-ba-tag-after">After</span>
+          <p class="cs-ba-title">Single-page Workflow</p>
+        </div>
+        <div class="cs-ba-visual cs-ba-after-img">
+          <img src="assets/images/saaslogic-final-subscription-workflow.png" alt="Final single-page subscription workflow">
+        </div>
+        <ul class="cs-list-check cs-list-sm">
+          <li>All in one view</li>
+          <li>Non-linear editing</li>
+          <li>Full context visibility</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 6 · CUSTOMER PORTAL ══ -->
+  <section class="cs-section cs-act-break">
+    <p class="sec-label-eyebrow">Customer Portal &mdash; Upgrade Plan Experience</p>
+    <h2 class="cs-section-heading">A different user type &mdash; a different approach</h2>
+    <p class="cs-body-text">In addition to the internal workflow, I designed an upgrade experience for the customer portal to help users compare plans and make informed decisions. The focus here was on clarity and reducing confusion for users making less frequent decisions.</p>
+    <div class="cs-image-grid cs-grid-3" style="margin-bottom:24px">
+
+      <div class="cs-portal-col">
+        <div class="cs-portal-card">
+          <div class="cs-step-meta">
+            <span class="cs-step-num">01</span>
+            <span class="cs-step-title">Current Plan</span>
+          </div>
+          <div class="cs-portal-img-wrap">
+            <button class="cs-step-expand" data-img="assets/images/saaslogic-customer-portal-01-current-plan.png" data-title="Current Plan" aria-label="Expand Current Plan to fullscreen">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 4V1h3M7 1h3v3M10 7v3H7M4 10H1V7"/></svg>
+            </button>
+            <img src="assets/images/saaslogic-customer-portal-01-current-plan.png" alt="Current Plan — customer portal screen">
+          </div>
+        </div>
+        <p class="cs-img-caption">User views current subscription details</p>
+      </div>
+
+      <div class="cs-portal-col">
+        <div class="cs-portal-card">
+          <div class="cs-step-meta">
+            <span class="cs-step-num">02</span>
+            <span class="cs-step-title">Select Plan</span>
+          </div>
+          <div class="cs-portal-img-wrap">
+            <button class="cs-step-expand" data-img="assets/images/saaslogic-customer-portal-02-select-plan.png" data-title="Select Plan" aria-label="Expand Select Plan to fullscreen">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 4V1h3M7 1h3v3M10 7v3H7M4 10H1V7"/></svg>
+            </button>
+            <img src="assets/images/saaslogic-customer-portal-02-select-plan.png" alt="Select Plan — customer portal screen">
+          </div>
+        </div>
+        <p class="cs-img-caption">Available plans displayed with clear pricing</p>
+      </div>
+
+      <div class="cs-portal-col">
+        <div class="cs-portal-card">
+          <div class="cs-step-meta">
+            <span class="cs-step-num">03</span>
+            <span class="cs-step-title">Compare Plans</span>
+          </div>
+          <div class="cs-portal-img-wrap">
+            <button class="cs-step-expand" data-img="assets/images/saaslogic-customer-portal-03-compare-plans.png" data-title="Compare Plans" aria-label="Expand Compare Plans to fullscreen">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 4V1h3M7 1h3v3M10 7v3H7M4 10H1V7"/></svg>
+            </button>
+            <img src="assets/images/saaslogic-customer-portal-03-compare-plans.png" alt="Compare Plans — customer portal screen">
+          </div>
+        </div>
+        <p class="cs-img-caption">Feature comparison supports decision-making</p>
+      </div>
+
+    </div>
+    <ul class="cs-list-plain">
+      <li>Clear plan comparison to support decision-making</li>
+      <li>Highlighted key differences between plans</li>
+      <li>Reduced visual clutter to avoid confusion</li>
+      <li>Structured information for easy scanning</li>
+    </ul>
+    <blockquote class="cs-quote">
+      <p>&ldquo;Unlike internal users, customers needed guidance to understand options rather than speed to complete tasks.&rdquo;</p>
+    </blockquote>
+  </section>
+
+  <!-- ══ 7 · OUTCOME ══ -->
+  <section class="cs-section cs-act-break">
+    <p class="sec-label-eyebrow">Outcome</p>
+    <h2 class="cs-section-heading">Faster workflows, less friction, lasting impact</h2>
+    <ul class="cs-list-check">
+      <li>Reduced navigation dependency for experienced users</li>
+      <li>Improved information visibility across all workflow stages</li>
+      <li>Faster task completion for customer success teams</li>
+      <li>Design pattern adopted for other admin workflows</li>
+    </ul>
+  </section>
+
+  <!-- ══ 8 · KEY TAKEAWAYS ══ -->
+  <section class="cs-section">
+    <p class="sec-label-eyebrow">Key Takeaways</p>
+    <h2 class="cs-section-heading">What this project reinforced</h2>
+    <div class="cs-takeaways">
+      <div class="cs-takeaway-item">
+        <p class="cs-takeaway-title">Design for expertise level</p>
+        <p class="cs-takeaway-desc">&#8594; Power users prioritize speed over guidance</p>
+      </div>
+      <div class="cs-takeaway-item">
+        <p class="cs-takeaway-title">Incorporate feedback from real users</p>
+        <p class="cs-takeaway-desc">&#8594; Customer-facing teams provide valuable workflow insights</p>
+      </div>
+      <div class="cs-takeaway-item">
+        <p class="cs-takeaway-title">Challenge default patterns</p>
+        <p class="cs-takeaway-desc">&#8594; Multi-step flows are not always optimal</p>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<!-- ══ EXPLORE MORE ══ -->
+<section class="cs-explore">
+  <div class="container">
+    <h2 class="cs-explore-heading">Explore More Work</h2>
+    <div class="cs-explore-grid">
+      <a class="cs-explore-card" href="zenith.html">
+        <p class="cs-explore-eyebrow">Featured Case Study</p>
+        <h3 class="cs-explore-title">Zenith &mdash; AI-Assisted E-commerce Admin Console</h3>
+        <p class="cs-explore-desc">Designing AI-assisted workflows that balance automation with user control</p>
+        <span class="cs-explore-link">View Case Study &#8594;</span>
+      </a>
+      <a class="cs-explore-card" href="cargospot.html">
+        <p class="cs-explore-eyebrow">Featured Case Study</p>
+        <h3 class="cs-explore-title">Cargospot &mdash; Shipment Workflow Optimization</h3>
+        <p class="cs-explore-desc">Streamlining data entry for high-volume operations</p>
+        <span class="cs-explore-link">View Case Study &#8594;</span>
+      </a>
+      <a class="cs-explore-card" href="crm.html">
+        <p class="cs-explore-eyebrow">Featured Case Study</p>
+        <h3 class="cs-explore-title">CRM &mdash; Lead Profile Redesign</h3>
+        <p class="cs-explore-desc">Redesigned lead profiles for sales user efficiency</p>
+        <span class="cs-explore-link">View Case Study &#8594;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ LIGHTBOX ══ -->
+<div class="cs-lightbox" id="cs-lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
+  <div class="cs-lightbox-backdrop"></div>
+  <div class="cs-lightbox-content">
+    <button class="cs-lightbox-close" aria-label="Close">&times;</button>
+    <img class="cs-lightbox-img" src="" alt="">
+  </div>
+</div>
+
+<script>
+(function(){
+  var lb      = document.getElementById('cs-lightbox');
+  var lbImg   = lb.querySelector('.cs-lightbox-img');
+  var lbClose = lb.querySelector('.cs-lightbox-close');
+  var lbBack  = lb.querySelector('.cs-lightbox-backdrop');
+
+  function openLb(src, title){
+    lbImg.src = src;
+    lbImg.alt = title || '';
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    lbClose.focus();
+  }
+  function closeLb(){
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+    setTimeout(function(){ lbImg.src = ''; }, 300);
+  }
+
+  document.querySelectorAll('.cs-step-expand').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      openLb(btn.dataset.img, btn.dataset.title);
+    });
+    btn.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        openLb(btn.dataset.img, btn.dataset.title);
+      }
+    });
+  });
+
+  document.querySelectorAll('.cs-step-img-wrap,.cs-final-img-wrap,.cs-ba-scroll-img,.cs-portal-img-wrap').forEach(function(wrap){
+    wrap.addEventListener('click',function(){
+      var btn=wrap.querySelector('.cs-step-expand');
+      if(btn) openLb(btn.dataset.img,btn.dataset.title);
+    });
+  });
+
+  lbClose.addEventListener('click', closeLb);
+  lbBack.addEventListener('click', closeLb);
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && lb.classList.contains('open')) closeLb();
+  });
+})();
+
+(function(){
+  if(!window.IntersectionObserver) return;
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.classList.add('cs-revealed');
+        obs.unobserve(e.target);
+      }
+    });
+  },{threshold:0.05,rootMargin:'0px 0px -16px 0px'});
+  document.querySelectorAll('.cs-section, .cs-final-showcase').forEach(function(el){
+    el.classList.add('cs-will-anim');
+    obs.observe(el);
+  });
+})();
+</script>
+
+<script>
+/* ── CASE STUDY NAV: SWITCHER + PROGRESS ── */
+(function(){
+  var STUDIES=[
+    {id:'saaslogic',title:'Saaslogic — Subscription Workflow Redesign',href:'saaslogic.html'},
+    {id:'cargospot',title:'Cargospot — Shipment Creation Workflow Optimization',href:'cargospot.html'},
+    {id:'crm',      title:'CRM — Lead Profile Redesign',href:'crm.html'},
+    {id:'zenith',   title:'Zenith — AI-Assisted E-commerce Admin Console',href:'zenith.html'}
+  ];
+  var nav=document.querySelector('.nav'),main=document.querySelector('.cs-page'),hero=document.querySelector('.cs-hero'),logo=nav&&nav.querySelector('.nav-logo');
+  if(!nav||!hero||!main||!logo)return;
+  var activeId=main.dataset.csId||'',activeStudy=STUDIES.filter(function(s){return s.id===activeId;})[0]||STUDIES[0],logoOrig=logo.textContent;
+
+  /* Switcher wrap */
+  var wrap=document.createElement('div');wrap.className='cs-nav-switcher-wrap';
+  var btn=document.createElement('button');btn.className='cs-nav-switcher';btn.type='button';
+  btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-haspopup','listbox');btn.setAttribute('aria-label','Switch case study');
+  var tspan=document.createElement('span');tspan.className='cs-nav-switcher-title';tspan.textContent=activeStudy.title;
+  var svgNS='http://www.w3.org/2000/svg',chev=document.createElementNS(svgNS,'svg');
+  chev.setAttribute('class','cs-nav-chevron');chev.setAttribute('width','10');chev.setAttribute('height','7');
+  chev.setAttribute('viewBox','0 0 10 7');chev.setAttribute('fill','none');chev.setAttribute('stroke','currentColor');
+  chev.setAttribute('stroke-width','1.6');chev.setAttribute('stroke-linecap','round');chev.setAttribute('aria-hidden','true');
+  var cp=document.createElementNS(svgNS,'path');cp.setAttribute('d','M1 1l4 4 4-4');chev.appendChild(cp);
+  btn.appendChild(tspan);btn.appendChild(chev);wrap.appendChild(btn);
+  nav.querySelector('.container').appendChild(wrap);
+
+  /* Dropdown */
+  var dd=document.createElement('div');dd.className='cs-nav-dropdown';dd.setAttribute('role','listbox');dd.setAttribute('aria-label','Case studies');
+  var lbl=document.createElement('p');lbl.className='cs-nav-dropdown-label';lbl.textContent='Case Studies';dd.appendChild(lbl);
+  STUDIES.forEach(function(s){
+    var a=document.createElement('a');a.className='cs-nav-dropdown-item'+(s.id===activeId?' active':'');
+    a.href=s.href;a.setAttribute('role','option');a.setAttribute('aria-selected',s.id===activeId?'true':'false');
+    var ck=document.createElement('span');ck.className='cs-nav-dropdown-check';ck.setAttribute('aria-hidden','true');ck.textContent=s.id===activeId?'✓':'';
+    var lx=document.createElement('span');lx.textContent=s.title;
+    a.appendChild(ck);a.appendChild(lx);dd.appendChild(a);
+  });
+  var div=document.createElement('div');div.className='cs-nav-dropdown-divider';dd.appendChild(div);
+  var va=document.createElement('a');va.className='cs-nav-dropdown-viewall';va.href='index.html#work';va.textContent='View All Work →';dd.appendChild(va);
+  document.body.appendChild(dd);
+
+  /* Progress bar */
+  var bar=document.createElement('div');bar.className='cs-reading-progress';document.body.appendChild(bar);
+
+  /* Positioning */
+  function posDD(){
+    var r=btn.getBoundingClientRect(),vw=window.innerWidth,cx=r.left+r.width/2;
+    dd.style.top=(r.bottom+6)+'px';dd.style.left=Math.max(148,Math.min(cx,vw-148))+'px';
+  }
+
+  /* Open/close */
+  var open=false;
+  function openDD(){if(open)return;open=true;posDD();dd.classList.add('open');btn.setAttribute('aria-expanded','true');}
+  function closeDD(){if(!open)return;open=false;dd.classList.remove('open');btn.setAttribute('aria-expanded','false');}
+  btn.addEventListener('click',function(e){e.stopPropagation();open?closeDD():openDD();});
+  document.addEventListener('click',closeDD);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&open){closeDD();btn.focus();}});
+  window.addEventListener('resize',function(){if(open)posDD();});
+
+  /* Scroll */
+  function update(){
+    var past=hero.getBoundingClientRect().bottom<=0;
+    nav.classList.toggle('cs-context',past);
+    bar.classList.toggle('cs-progress-visible',past);
+    logo.textContent=past?'← Portfolio':logoOrig;
+    var dh=document.documentElement.scrollHeight-window.innerHeight;
+    bar.style.width=(dh>0?Math.min(100,window.scrollY/dh*100):0)+'%';
+    if(open)posDD();
+  }
+  window.addEventListener('scroll',update,{passive:true});
+  update();
+})();
+</script>
+<script src="js/callouts.js"></script>
+</body>
+</html>

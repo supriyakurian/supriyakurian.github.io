@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cargospot Case Study &mdash; Supriya Kurian</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/casestudy.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a class="nav-logo" href="index.html" style="text-decoration:none">STK Portfolio</a>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html#work">Work</a>
+      <a class="nav-link" href="index.html#about">About</a>
+      <a class="nav-link" href="index.html#contact">Contact</a>
+      <a class="nav-resume" href="resume.html">View Resume</a>
+    </div>
+  </div>
+</nav>
+
+<main class="cs-page container" data-cs-id="cargospot">
+
+  <!-- ══ HERO ══ -->
+  <header class="cs-hero">
+    <a class="cs-back" href="index.html"><span class="cs-back-arr">&#8592;</span><span class="cs-back-text">Back to Portfolio</span></a>
+    <p class="sec-label-eyebrow">Case Study &middot; Logistics &middot; Workflow Design</p>
+    <h1 class="cs-title">Cargospot &mdash; Shipment Creation Workflow Optimization</h1>
+    <p class="cs-subtitle">Streamlining data entry for high-volume logistics operations &mdash; reducing the steps required to create a shipment and improving efficiency for operational users</p>
+    <div class="cs-meta">
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">Role</span>
+        <span class="cs-meta-value">Product Designer</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">Platform</span>
+        <span class="cs-meta-value">Web (B2B)</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">Scope</span>
+        <span class="cs-meta-value">Shipment creation workflow</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══ CONTEXT ══ -->
+  <div class="cs-context-note">
+    <p class="sec-label-eyebrow">Context</p>
+    <p class="cs-body-text">Cargospot is a shipment management product. This case study focuses specifically on improving the shipment creation workflow for operational users.</p>
+  </div>
+
+  <!-- ══ 1 · PROBLEM ══ -->
+  <section class="cs-section cs-act-break">
+    <p class="sec-label-eyebrow">Problem</p>
+    <h2 class="cs-section-heading">Operational users were slowed down by the workflow itself</h2>
+    <p class="cs-body-text">Logistics operations teams needed to create shipments quickly and repeatedly throughout the day. The existing workflow broke this process into discrete steps &mdash; requiring users to navigate through multiple screens to complete a single shipment entry.</p>
+    <ul class="cs-list-cross">
+      <li>Six separate screens required to complete one shipment entry</li>
+      <li>Each step transition interrupted the data entry rhythm</li>
+      <li>Critical shipment details were distributed across steps, reducing visibility</li>
+      <li>Errors at a late step forced users to navigate back through the workflow</li>
+    </ul>
+    <blockquote class="cs-insight">
+      <span class="cs-insight-label">Key Insight</span>
+      <p>&ldquo;Operational users were creating shipments repeatedly &mdash; the workflow needed to support speed, not onboarding.&rdquo;</p>
+    </blockquote>
+  </section>
+
+  <!-- ══ 2 · INITIAL DESIGN APPROACH ══ -->
+  <section class="cs-section cs-act-break">
+    <p class="sec-label-eyebrow">Initial Design Approach</p>
+    <h2 class="cs-section-heading">The first design: a step-by-step guided flow</h2>
+    <p class="cs-body-text">The initial design followed a structured, progressive approach &mdash; breaking the shipment creation process into six sequential steps to reduce complexity at each stage.</p>
+
+    <div class="cs-workflow">
+      <div class="cs-workflow-step">
+        <span class="cs-workflow-num">01</span>
+        <span class="cs-workflow-label">Shipment Details</span>
+      </div>
+      <span class="cs-workflow-arrow">&#8594;</span>
+      <div class="cs-workflow-step">
+        <span class="cs-workflow-num">02</span>
+        <span class="cs-workflow-label">Stops</span>
+      </div>
+      <span class="cs-workflow-arrow">&#8594;</span>
+      <div class="cs-workflow-step">
+        <span class="cs-workflow-num">03</span>
+        <span class="cs-workflow-label">Customer</span>
+      </div>
+      <span class="cs-workflow-arrow">&#8594;</span>
+      <div class="cs-workflow-step">
+        <span class="cs-workflow-num">04</span>
+        <span class="cs-workflow-label">Items</span>
+      </div>
+      <span class="cs-workflow-arrow">&#8594;</span>
+      <div class="cs-workflow-step">
+        <span class="cs-workflow-num">05</span>
+        <span class="cs-workflow-label">Charges</span>
+      </div>
+      <span class="cs-workflow-arrow">&#8594;</span>
+      <div class="cs-workflow-step">
+        <span class="cs-workflow-num">06</span>
+        <span class="cs-workflow-label">Review</span>
+      </div>
+    </div>
+    <p class="cs-caption">Six sequential steps &mdash; each screen revealed the next stage only after the current one was completed.</p>
+  </section>
+
+  <!-- ══ 3 · WHAT DIDN'T WORK ══ -->
+  <section class="cs-section">
+    <p class="sec-label-eyebrow">What Didn&rsquo;t Work</p>
+    <h2 class="cs-section-heading">The step approach worked for new users &mdash; not experienced operators</h2>
+    <ul class="cs-list-cross">
+      <li>Experienced users found the step-by-step structure unnecessarily restrictive</li>
+      <li>Navigating between steps interrupted the rhythm of high-volume data entry</li>
+      <li>Updating a detail from an earlier step required navigating backwards through the flow</li>
+      <li>The Review step added overhead without meaningfully reducing errors</li>
+    </ul>
+  </section>
+
+  <!-- ══ 4 · DESIGN SHIFT ══ -->
+  <section class="cs-section">
+    <p class="sec-label-eyebrow">Design Shift</p>
+    <h2 class="cs-section-heading">From sequential steps to continuous data entry</h2>
+    <div class="cs-pivot">
+      <p class="cs-pivot-text">Instead of forcing users through a structured sequence, the workflow was redesigned around faster, continuous data entry. All shipment fields were consolidated into a single, scannable view &mdash; allowing operational users to move through the form at their own pace, without step-to-step navigation overhead.</p>
+    </div>
+  </section>
+
+  <!-- ══ 5 · DESIGN SOLUTION ══ -->
+  <section class="cs-section cs-act-break">
+    <p class="sec-label-eyebrow">Design Solution</p>
+    <h2 class="cs-section-heading">One continuous form. All fields visible. No navigation required.</h2>
+    <p class="cs-body-text">The redesigned workflow consolidated all six steps into a single, scrollable form. Users can enter shipment data from top to bottom without leaving the screen &mdash; and can revisit any field at any point during entry.</p>
+
+    <div class="cs-final-img-wrap">
+      <button class="cs-step-expand"
+        data-img="assets/images/cargospot-shipment-creation-final-design.png"
+        data-title="Design Solution &mdash; Shipment Creation Workflow"
+        aria-label="Expand design to fullscreen">
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 4V1h3M7 1h3v3M10 7v3H7M4 10H1V7"/></svg>
+      </button>
+      <div class="cs-final-scroll">
+        <div class="cs-final-img-inner">
+          <img class="cs-final-image" src="assets/images/cargospot-shipment-creation-final-design.png" alt="Redesigned shipment creation workflow for Cargospot">
+          <button class="cs-callout-pin" data-pin="1" style="top:7%;left:4%" aria-label="Callout 1: Single continuous form">1</button>
+          <button class="cs-callout-pin" data-pin="2" style="top:12%;left:72%" aria-label="Callout 2: Persistent shipment summary">2</button>
+          <button class="cs-callout-pin" data-pin="3" style="top:46%;left:28%" aria-label="Callout 3: Inline field groups">3</button>
+          <button class="cs-callout-pin" data-pin="4" style="top:70%;left:4%" aria-label="Callout 4: Non-linear editing">4</button>
+        </div>
+      </div>
+    </div>
+    <ul class="cs-callout-legend">
+      <li data-pin="1"><span class="cs-callout-num">1</span> Single continuous form &mdash; all shipment fields available without step navigation.</li>
+      <li data-pin="2"><span class="cs-callout-num">2</span> Persistent shipment summary &mdash; key details stay visible throughout entry.</li>
+      <li data-pin="3"><span class="cs-callout-num">3</span> Inline field groups &mdash; stops, items, and charges entered in context.</li>
+      <li data-pin="4"><span class="cs-callout-num">4</span> Non-linear editing &mdash; any field editable at any point without back-navigation.</li>
+    </ul>
+    <p class="cs-final-caption">Redesigned shipment creation workflow &mdash; consolidated from six steps into a single continuous form to reduce navigation and improve data entry efficiency for operational users.</p>
+  </section>
+
+  <!-- ══ 6 · KEY DESIGN DECISIONS ══ -->
+  <section class="cs-section">
+    <p class="sec-label-eyebrow">Key Design Decisions</p>
+    <h2 class="cs-section-heading">Four decisions that defined the redesign</h2>
+    <div class="cs-takeaways">
+
+      <div class="cs-takeaway-item">
+        <p class="cs-takeaway-title"><span class="cs-callout-num" style="margin-right:6px">1</span>Single continuous form</p>
+        <p class="cs-takeaway-desc">Consolidating all six steps into one scrollable form removed the navigation overhead that slowed experienced users. Fields are grouped logically &mdash; not gated by step progression.</p>
+      </div>
+
+      <div class="cs-takeaway-item">
+        <p class="cs-takeaway-title"><span class="cs-callout-num" style="margin-right:6px">2</span>Persistent shipment summary</p>
+        <p class="cs-takeaway-desc">A persistent summary panel keeps critical details &mdash; route, customer, and charge totals &mdash; visible throughout entry, reducing the need to scroll back to verify information already entered.</p>
+      </div>
+
+      <div class="cs-takeaway-item">
+        <p class="cs-takeaway-title"><span class="cs-callout-num" style="margin-right:6px">3</span>Inline field groups</p>
+        <p class="cs-takeaway-desc">Stops, items, and charges are entered inline within the form rather than as separate screens. Related fields stay grouped together, reducing the cognitive load of switching between contexts.</p>
+      </div>
+
+      <div class="cs-takeaway-item">
+        <p class="cs-takeaway-title"><span class="cs-callout-num" style="margin-right:6px">4</span>Non-linear editing</p>
+        <p class="cs-takeaway-desc">Users can jump to any field at any point during entry without retracing previous steps &mdash; particularly important for high-volume users who often have partial information at the start of entry.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ 7 · OUTCOME ══ -->
+  <section class="cs-section cs-act-break">
+    <p class="sec-label-eyebrow">Outcome</p>
+    <h2 class="cs-section-heading">A faster, more efficient creation workflow</h2>
+    <p class="cs-body-text">Consolidating the workflow reduced the navigation required per shipment entry and gave operational users the continuous, uninterrupted data entry experience they needed for high-volume work.</p>
+    <ul class="cs-list-check">
+      <li>Reduced navigation steps required per shipment entry</li>
+      <li>Improved data entry efficiency for high-volume operational users</li>
+      <li>Fewer errors due to improved field and context visibility throughout entry</li>
+      <li>Workflow pattern applied across other high-volume data entry screens in the product</li>
+    </ul>
+  </section>
+
+  <!-- ══ 8 · KEY TAKEAWAYS ══ -->
+  <section class="cs-section">
+    <p class="sec-label-eyebrow">Key Takeaways</p>
+    <h2 class="cs-section-heading">What this project reinforced</h2>
+    <div class="cs-takeaways">
+      <div class="cs-takeaway-item">
+        <p class="cs-takeaway-title">Design for operational velocity</p>
+        <p class="cs-takeaway-desc">&#8594; High-volume users prioritize speed and continuity over structured guidance</p>
+      </div>
+      <div class="cs-takeaway-item">
+        <p class="cs-takeaway-title">Consolidation reduces cognitive load</p>
+        <p class="cs-takeaway-desc">&#8594; Keeping all relevant fields visible eliminates the memory cost of multi-step flows</p>
+      </div>
+      <div class="cs-takeaway-item">
+        <p class="cs-takeaway-title">Structure should serve the user&rsquo;s expertise</p>
+        <p class="cs-takeaway-desc">&#8594; Step-by-step flows suit onboarding &mdash; not daily operational work</p>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<!-- ══ EXPLORE MORE ══ -->
+<section class="cs-explore">
+  <div class="container">
+    <h2 class="cs-explore-heading">Explore More Work</h2>
+    <div class="cs-explore-grid">
+      <a class="cs-explore-card" href="saaslogic.html">
+        <p class="cs-explore-eyebrow">Featured Case Study</p>
+        <h3 class="cs-explore-title">Saaslogic &mdash; Subscription Workflow Redesign</h3>
+        <p class="cs-explore-desc">Reduced a multi-step subscription process into a single-page workflow for operational users</p>
+        <span class="cs-explore-link">View Case Study &#8594;</span>
+      </a>
+      <a class="cs-explore-card" href="crm.html">
+        <p class="cs-explore-eyebrow">Featured Case Study</p>
+        <h3 class="cs-explore-title">CRM &mdash; Lead Profile Redesign</h3>
+        <p class="cs-explore-desc">Redesigned lead profiles for sales user efficiency and operational visibility</p>
+        <span class="cs-explore-link">View Case Study &#8594;</span>
+      </a>
+      <a class="cs-explore-card" href="zenith.html">
+        <p class="cs-explore-eyebrow">Featured Case Study</p>
+        <h3 class="cs-explore-title">Zenith &mdash; AI-Assisted E-commerce Admin Console</h3>
+        <p class="cs-explore-desc">Designing AI-assisted workflows that balance automation with user control</p>
+        <span class="cs-explore-link">View Case Study &#8594;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ LIGHTBOX ══ -->
+<div class="cs-lightbox" id="cs-lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
+  <div class="cs-lightbox-backdrop"></div>
+  <div class="cs-lightbox-content">
+    <button class="cs-lightbox-close" aria-label="Close">&times;</button>
+    <img class="cs-lightbox-img" src="" alt="">
+  </div>
+</div>
+
+<script>
+(function(){
+  var lb      = document.getElementById('cs-lightbox');
+  var lbImg   = lb.querySelector('.cs-lightbox-img');
+  var lbClose = lb.querySelector('.cs-lightbox-close');
+  var lbBack  = lb.querySelector('.cs-lightbox-backdrop');
+
+  function openLb(src, title){
+    lbImg.src = src;
+    lbImg.alt = title || '';
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    lbClose.focus();
+  }
+  function closeLb(){
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+    setTimeout(function(){ lbImg.src = ''; }, 300);
+  }
+
+  document.querySelectorAll('.cs-step-expand').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      openLb(btn.dataset.img, btn.dataset.title);
+    });
+    btn.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        openLb(btn.dataset.img, btn.dataset.title);
+      }
+    });
+  });
+
+  document.querySelectorAll('.cs-step-img-wrap,.cs-final-img-wrap,.cs-ba-scroll-img,.cs-portal-img-wrap').forEach(function(wrap){
+    wrap.addEventListener('click',function(){
+      var btn=wrap.querySelector('.cs-step-expand');
+      if(btn) openLb(btn.dataset.img,btn.dataset.title);
+    });
+  });
+
+  lbClose.addEventListener('click', closeLb);
+  lbBack.addEventListener('click', closeLb);
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && lb.classList.contains('open')) closeLb();
+  });
+})();
+
+(function(){
+  if(!window.IntersectionObserver) return;
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.classList.add('cs-revealed');
+        obs.unobserve(e.target);
+      }
+    });
+  },{threshold:0.05,rootMargin:'0px 0px -16px 0px'});
+  document.querySelectorAll('.cs-section').forEach(function(el){
+    el.classList.add('cs-will-anim');
+    obs.observe(el);
+  });
+})();
+</script>
+
+<script>
+/* ── CASE STUDY NAV: SWITCHER + PROGRESS ── */
+(function(){
+  var STUDIES=[
+    {id:'saaslogic',title:'Saaslogic — Subscription Workflow Redesign',href:'saaslogic.html'},
+    {id:'cargospot',title:'Cargospot — Shipment Creation Workflow Optimization',href:'cargospot.html'},
+    {id:'crm',      title:'CRM — Lead Profile Redesign',href:'crm.html'},
+    {id:'zenith',   title:'Zenith — AI-Assisted E-commerce Admin Console',href:'zenith.html'}
+  ];
+  var nav=document.querySelector('.nav'),main=document.querySelector('.cs-page'),hero=document.querySelector('.cs-hero'),logo=nav&&nav.querySelector('.nav-logo');
+  if(!nav||!hero||!main||!logo)return;
+  var activeId=main.dataset.csId||'',activeStudy=STUDIES.filter(function(s){return s.id===activeId;})[0]||STUDIES[0],logoOrig=logo.textContent;
+
+  var wrap=document.createElement('div');wrap.className='cs-nav-switcher-wrap';
+  var btn=document.createElement('button');btn.className='cs-nav-switcher';btn.type='button';
+  btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-haspopup','listbox');btn.setAttribute('aria-label','Switch case study');
+  var tspan=document.createElement('span');tspan.className='cs-nav-switcher-title';tspan.textContent=activeStudy.title;
+  var svgNS='http://www.w3.org/2000/svg',chev=document.createElementNS(svgNS,'svg');
+  chev.setAttribute('class','cs-nav-chevron');chev.setAttribute('width','10');chev.setAttribute('height','7');
+  chev.setAttribute('viewBox','0 0 10 7');chev.setAttribute('fill','none');chev.setAttribute('stroke','currentColor');
+  chev.setAttribute('stroke-width','1.6');chev.setAttribute('stroke-linecap','round');chev.setAttribute('aria-hidden','true');
+  var cp=document.createElementNS(svgNS,'path');cp.setAttribute('d','M1 1l4 4 4-4');chev.appendChild(cp);
+  btn.appendChild(tspan);btn.appendChild(chev);wrap.appendChild(btn);
+  nav.querySelector('.container').appendChild(wrap);
+
+  var dd=document.createElement('div');dd.className='cs-nav-dropdown';dd.setAttribute('role','listbox');dd.setAttribute('aria-label','Case studies');
+  var lbl=document.createElement('p');lbl.className='cs-nav-dropdown-label';lbl.textContent='Case Studies';dd.appendChild(lbl);
+  STUDIES.forEach(function(s){
+    var a=document.createElement('a');a.className='cs-nav-dropdown-item'+(s.id===activeId?' active':'');
+    a.href=s.href;a.setAttribute('role','option');a.setAttribute('aria-selected',s.id===activeId?'true':'false');
+    var ck=document.createElement('span');ck.className='cs-nav-dropdown-check';ck.setAttribute('aria-hidden','true');ck.textContent=s.id===activeId?'✓':'';
+    var lx=document.createElement('span');lx.textContent=s.title;
+    a.appendChild(ck);a.appendChild(lx);dd.appendChild(a);
+  });
+  var div=document.createElement('div');div.className='cs-nav-dropdown-divider';dd.appendChild(div);
+  var va=document.createElement('a');va.className='cs-nav-dropdown-viewall';va.href='index.html#work';va.textContent='View All Work →';dd.appendChild(va);
+  document.body.appendChild(dd);
+
+  var bar=document.createElement('div');bar.className='cs-reading-progress';document.body.appendChild(bar);
+
+  function posDD(){
+    var r=btn.getBoundingClientRect(),vw=window.innerWidth,cx=r.left+r.width/2;
+    dd.style.top=(r.bottom+6)+'px';dd.style.left=Math.max(148,Math.min(cx,vw-148))+'px';
+  }
+
+  var open=false;
+  function openDD(){if(open)return;open=true;posDD();dd.classList.add('open');btn.setAttribute('aria-expanded','true');}
+  function closeDD(){if(!open)return;open=false;dd.classList.remove('open');btn.setAttribute('aria-expanded','false');}
+  btn.addEventListener('click',function(e){e.stopPropagation();open?closeDD():openDD();});
+  document.addEventListener('click',closeDD);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&open){closeDD();btn.focus();}});
+  window.addEventListener('resize',function(){if(open)posDD();});
+
+  function update(){
+    var past=hero.getBoundingClientRect().bottom<=0;
+    nav.classList.toggle('cs-context',past);
+    bar.classList.toggle('cs-progress-visible',past);
+    logo.textContent=past?'← Portfolio':logoOrig;
+    var dh=document.documentElement.scrollHeight-window.innerHeight;
+    bar.style.width=(dh>0?Math.min(100,window.scrollY/dh*100):0)+'%';
+    if(open)posDD();
+  }
+  window.addEventListener('scroll',update,{passive:true});
+  update();
+})();
+</script>
+<script src="js/callouts.js"></script>
+</body>
+</html>

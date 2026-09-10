@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zenith Case Study &mdash; Supriya Kurian</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/casestudy.css">
+<style>
+.cs-strategy-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 0;
+}
+.cs-strategy-card{
+  padding:24px 26px;
+  border:1px solid #E8E2D9;
+  border-radius:16px;
+  background:#fff;
+  box-shadow:0 2px 8px rgba(40,35,30,.05),0 1px 3px rgba(40,35,30,.03);
+}
+.cs-strategy-num{
+  font-size:10px;font-weight:700;color:var(--text-secondary);
+  letter-spacing:.1em;background:var(--hero-bg);
+  border:1px solid var(--border);border-radius:4px;
+  display:inline-block;padding:3px 8px;margin-bottom:14px;
+}
+.cs-strategy-title{
+  font-size:14px;font-weight:700;color:var(--text);
+  margin-bottom:10px;letter-spacing:-0.01em;
+}
+.cs-strategy-desc{
+  font-size:13px;font-weight:400;color:var(--text-secondary);
+  line-height:1.7;margin:0;
+}
+@media(max-width:768px){
+  .cs-strategy-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a class="nav-logo" href="index.html" style="text-decoration:none">STK Portfolio</a>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html#work">Work</a>
+      <a class="nav-link" href="index.html#about">About</a>
+      <a class="nav-link" href="index.html#contact">Contact</a>
+      <a class="nav-resume" href="resume.html">View Resume</a>
+    </div>
+  </div>
+</nav>
+
+<main class="cs-page container" data-cs-id="zenith">
+
+  <!-- ══ HERO ══ -->
+  <header class="cs-hero">
+    <a class="cs-back" href="index.html"><span class="cs-back-arr">&#8592;</span><span class="cs-back-text">Back to Portfolio</span></a>
+    <p class="sec-label-eyebrow">Case Study &middot; AI &middot; Product Design</p>
+    <h1 class="cs-title">Zenith &mdash; AI-Assisted E-commerce Admin Console</h1>
+    <p class="cs-subtitle">Designed an AI-assisted e-commerce admin experience that improves operational workflows while maintaining user control.</p>
+    <div class="cs-meta">
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">Role</span>
+        <span class="cs-meta-value">Product Designer</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">Platform</span>
+        <span class="cs-meta-value">Web Application</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">Scope</span>
+        <span class="cs-meta-value">AI-assisted admin workflows and interaction design</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══ 1 · PROBLEM ══ -->
+  <section class="cs-section cs-act-break">
+    <p class="sec-label-eyebrow">Problem</p>
+    <h2 class="cs-section-heading">Admin operations needed AI assistance &mdash; without losing user control</h2>
+    <p class="cs-body-text">E-commerce admin teams managing promotions, inventory, and operational decisions faced a growing challenge: AI assistance was available but poorly integrated into their workflows, creating friction rather than reducing it.</p>
+    <ul class="cs-list-cross">
+      <li>Admin teams spent significant time on repetitive operational decisions</li>
+      <li>AI tools tended to automate actions outright, removing user agency and trust</li>
+      <li>Operators lacked confidence in AI recommendations without visible reasoning</li>
+      <li>Context switching between manual tasks and AI outputs increased cognitive load</li>
+    </ul>
+    <blockquote class="cs-insight">
+      <span class="cs-insight-label">Key Insight</span>
+      <p>&ldquo;AI should assist operational workflows without removing user control or increasing cognitive load.&rdquo;</p>
+    </blockquote>
+  </section>
+
+  <!-- ══ 2 · APPROACH ══ -->
+  <section class="cs-section cs-act-break">
+    <p class="sec-label-eyebrow">Approach</p>
+    <h2 class="cs-section-heading">Designing AI as a workflow collaborator, not a replacement</h2>
+    <p class="cs-body-text">The design approach centered on integrating AI assistance at the right decision points in existing workflows &mdash; where operators needed support &mdash; while keeping users visibly in control at every step.</p>
+    <ul class="cs-list-plain">
+      <li>Map where operators made the most manual decisions across core admin workflows</li>
+      <li>Identify where AI assistance provides genuine value versus adds friction</li>
+      <li>Design AI interactions that surface reasoning alongside recommendations</li>
+      <li>Maintain explicit user confirmation for all consequential actions</li>
+    </ul>
+  </section>
+
+  <!-- ══ 3 · AI WORKFLOW STRATEGY ══ -->
+  <section class="cs-section">
+    <p class="sec-label-eyebrow">AI Workflow Strategy</p>
+    <h2 class="cs-section-heading">Two complementary tracks: structuring and execution</h2>
+    <p class="cs-body-text">The strategy was structured around two tracks that together covered how AI assistance was integrated across the admin experience &mdash; from content structuring to operational execution.</p>
+    <div class="cs-strategy-grid">
+      <div class="cs-strategy-card">
+        <p class="cs-strategy-num">01</p>
+        <p class="cs-strategy-title">Design Structuring Track</p>
+        <p class="cs-strategy-desc">Focused on how AI helps operators structure content, promotions, and product configurations. AI surfaces recommendations based on historical data and business rules &mdash; operators review, modify, and confirm before anything is applied.</p>
+      </div>
+      <div class="cs-strategy-card">
+        <p class="cs-strategy-num">02</p>
+        <p class="cs-strategy-title">Execution Track</p>
+        <p class="cs-strategy-desc">Focused on how AI assists with operational execution &mdash; scheduling, bulk actions, and workflow automation. Operators retain full visibility over what is running, with clear controls to pause, adjust, or override at any step.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 4 · DESIGN SOLUTION ══ -->
+  <section class="cs-section cs-act-break">
+    <p class="sec-label-eyebrow">Design Solution</p>
+    <h2 class="cs-section-heading">AI assistance integrated into the workflow &mdash; not alongside it</h2>
+    <p class="cs-body-text">The design solution brought AI suggestions directly into the existing operational interface. Operators see recommendations within their current context &mdash; with visible reasoning and confirmation steps before any action is applied.</p>
+
+    <div class="cs-step-grid" style="margin-top:28px;">
+
+      <div class="cs-step-card">
+        <div class="cs-step-meta">
+          <span class="cs-step-num">01</span>
+          <span class="cs-step-title">Dashboard</span>
+        </div>
+        <div class="cs-step-img-wrap">
+          <button class="cs-step-expand" data-img="assets/images/zenith-dashboard.png" data-title="Zenith &mdash; Dashboard" aria-label="Expand Dashboard to fullscreen">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 4V1h3M7 1h3v3M10 7v3H7M4 10H1V7"/></svg>
+          </button>
+          <img src="assets/images/zenith-dashboard.png" alt="Zenith Dashboard &mdash; AI-assisted e-commerce admin overview">
+        </div>
+      </div>
+
+      <div class="cs-step-card">
+        <div class="cs-step-meta">
+          <span class="cs-step-num">02</span>
+          <span class="cs-step-title">Orders</span>
+        </div>
+        <div class="cs-step-img-wrap">
+          <button class="cs-step-expand" data-img="assets/images/zenith-orders.png" data-title="Zenith &mdash; Orders" aria-label="Expand Orders to fullscreen">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 4V1h3M7 1h3v3M10 7v3H7M4 10H1V7"/></svg>
+          </button>
+          <img src="assets/images/zenith-orders.png" alt="Zenith Orders &mdash; order management with AI-assisted workflow">
+        </div>
+      </div>
+
+      <div class="cs-step-card">
+        <div class="cs-step-meta">
+          <span class="cs-step-num">03</span>
+          <span class="cs-step-title">Inventory Management</span>
+        </div>
+        <div class="cs-step-img-wrap">
+          <button class="cs-step-expand" data-img="assets/images/zenith-inventory.png" data-title="Zenith &mdash; Inventory Management" aria-label="Expand Inventory Management to fullscreen">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 4V1h3M7 1h3v3M10 7v3H7M4 10H1V7"/></svg>
+          </button>
+          <img src="assets/images/zenith-inventory.png" alt="Zenith Inventory Management &mdash; stock and inventory operations">
+        </div>
+      </div>
+
+      <div class="cs-step-card">
+        <div class="cs-step-meta">
+          <span class="cs-step-num">04</span>
+          <span class="cs-step-title">Promotions &amp; Offers</span>
+        </div>
+        <div class="cs-step-img-wrap">
+          <button class="cs-step-expand" data-img="assets/images/zenith-promotions.png" data-title="Zenith &mdash; Promotions &amp; Offers" aria-label="Expand Promotions and Offers to fullscreen">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 4V1h3M7 1h3v3M10 7v3H7M4 10H1V7"/></svg>
+          </button>
+          <img src="assets/images/zenith-promotions.png" alt="Zenith Promotions and Offers &mdash; AI-assisted promotion management">
+        </div>
+      </div>
+
+      <div class="cs-step-card">
+        <div class="cs-step-meta">
+          <span class="cs-step-num">05</span>
+          <span class="cs-step-title">Product Catalogue</span>
+        </div>
+        <div class="cs-step-img-wrap">
+          <button class="cs-step-expand" data-img="assets/images/zenith-products.png" data-title="Zenith &mdash; Product Catalogue" aria-label="Expand Product Catalogue to fullscreen">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 4V1h3M7 1h3v3M10 7v3H7M4 10H1V7"/></svg>
+          </button>
+          <img src="assets/images/zenith-products.png" alt="Zenith Product Catalogue &mdash; product management interface">
+        </div>
+      </div>
+
+      <div class="cs-step-card">
+        <div class="cs-step-meta">
+          <span class="cs-step-num">06</span>
+          <span class="cs-step-title">Settings</span>
+        </div>
+        <div class="cs-step-img-wrap">
+          <button class="cs-step-expand" data-img="assets/images/zenith-settings.png" data-title="Zenith &mdash; Settings" aria-label="Expand Settings to fullscreen">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 4V1h3M7 1h3v3M10 7v3H7M4 10H1V7"/></svg>
+          </button>
+          <img src="assets/images/zenith-settings.png" alt="Zenith Settings &mdash; admin configuration and preferences">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ 5 · INTERACTION IMPROVEMENTS ══ -->
+  <section class="cs-section">
+    <p class="sec-label-eyebrow">Interaction Improvements Summary</p>
+    <h2 class="cs-section-heading">Key changes that reduced friction and improved operator confidence</h2>
+    <ul class="cs-list-check">
+      <li>AI recommendations displayed inline with supporting context &mdash; not in a separate panel</li>
+      <li>Confidence indicators shown alongside AI suggestions to help operators calibrate trust</li>
+      <li>One-click accept with full ability to modify before confirming any AI-generated action</li>
+      <li>Non-destructive AI actions &mdash; all suggestions remain reviewable before execution</li>
+      <li>Clear reasoning shown for each AI recommendation to support operator decision-making</li>
+    </ul>
+  </section>
+
+  <!-- ══ 6 · WHAT DIDN'T WORK ══ -->
+  <section class="cs-section cs-act-break">
+    <p class="sec-label-eyebrow">What Didn&rsquo;t Work</p>
+    <h2 class="cs-section-heading">Early approach: a separate AI suggestions panel</h2>
+    <ul class="cs-list-cross">
+      <li>A separate AI panel created context switching between the main interface and AI output</li>
+      <li>Operators ignored the panel when the connection to their current task was unclear</li>
+      <li>High-confidence AI suggestions presented without reasoning reduced operator trust</li>
+      <li>Auto-applying AI recommendations caused operators to disengage from verification steps</li>
+    </ul>
+  </section>
+
+  <!-- ══ 7 · OUTCOME ══ -->
+  <section class="cs-section">
+    <p class="sec-label-eyebrow">Outcome</p>
+    <h2 class="cs-section-heading">Operators used AI assistance more consistently &mdash; and with greater confidence</h2>
+    <ul class="cs-list-check">
+      <li>AI recommendations integrated inline into existing workflows, reducing task-switching</li>
+      <li>Higher operator engagement with AI suggestions when reasoning was made visible</li>
+      <li>All consequential actions retained explicit confirmation steps, preserving operator control</li>
+      <li>The interaction pattern extended across promotions, inventory, and operational scheduling</li>
+    </ul>
+  </section>
+
+  <!-- ══ 8 · KEY TAKEAWAYS ══ -->
+  <section class="cs-section cs-act-break">
+    <p class="sec-label-eyebrow">Key Takeaways</p>
+    <h2 class="cs-section-heading">What this project reinforced</h2>
+    <div class="cs-takeaways">
+      <div class="cs-takeaway-item">
+        <p class="cs-takeaway-title">AI as a decision support layer, not a decision maker</p>
+        <p class="cs-takeaway-desc">&#8594; Designing AI that enhances rather than replaces operator judgment builds sustained trust and consistent adoption</p>
+      </div>
+      <div class="cs-takeaway-item">
+        <p class="cs-takeaway-title">Visible reasoning builds operator trust</p>
+        <p class="cs-takeaway-desc">&#8594; Showing the reasoning behind AI suggestions is as important as the suggestion itself &mdash; operators need to understand, not just accept</p>
+      </div>
+      <div class="cs-takeaway-item">
+        <p class="cs-takeaway-title">Integrate at the point of decision</p>
+        <p class="cs-takeaway-desc">&#8594; AI assistance is most effective when surfaced within the existing workflow &mdash; a separate AI interface creates the context switching it is meant to eliminate</p>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<!-- ══ EXPLORE MORE ══ -->
+<section class="cs-explore">
+  <div class="container">
+    <h2 class="cs-explore-heading">Explore More Work</h2>
+    <div class="cs-explore-grid">
+      <a class="cs-explore-card" href="saaslogic.html">
+        <p class="cs-explore-eyebrow">Featured Case Study</p>
+        <h3 class="cs-explore-title">Saaslogic &mdash; Subscription Workflow Redesign</h3>
+        <p class="cs-explore-desc">Reduced a multi-step subscription process into a single-page workflow for operational users</p>
+        <span class="cs-explore-link">View Case Study &#8594;</span>
+      </a>
+      <a class="cs-explore-card" href="cargospot.html">
+        <p class="cs-explore-eyebrow">Featured Case Study</p>
+        <h3 class="cs-explore-title">Cargospot &mdash; Shipment Workflow Optimization</h3>
+        <p class="cs-explore-desc">Streamlining data entry for high-volume logistics operations</p>
+        <span class="cs-explore-link">View Case Study &#8594;</span>
+      </a>
+      <a class="cs-explore-card" href="crm.html">
+        <p class="cs-explore-eyebrow">Featured Case Study</p>
+        <h3 class="cs-explore-title">CRM &mdash; Lead Profile Redesign</h3>
+        <p class="cs-explore-desc">Improved lead management experience by restructuring information and enabling faster actions</p>
+        <span class="cs-explore-link">View Case Study &#8594;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ LIGHTBOX ══ -->
+<div class="cs-lightbox" id="cs-lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
+  <div class="cs-lightbox-backdrop"></div>
+  <div class="cs-lightbox-content">
+    <button class="cs-lightbox-close" aria-label="Close">&times;</button>
+    <img class="cs-lightbox-img" src="" alt="">
+  </div>
+</div>
+
+<script>
+(function(){
+  var lb      = document.getElementById('cs-lightbox');
+  var lbImg   = lb.querySelector('.cs-lightbox-img');
+  var lbClose = lb.querySelector('.cs-lightbox-close');
+  var lbBack  = lb.querySelector('.cs-lightbox-backdrop');
+
+  function openLb(src, title){
+    lbImg.src = src;
+    lbImg.alt = title || '';
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    lbClose.focus();
+  }
+  function closeLb(){
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+    setTimeout(function(){ lbImg.src = ''; }, 300);
+  }
+
+  document.querySelectorAll('.cs-step-expand').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      openLb(btn.dataset.img, btn.dataset.title);
+    });
+    btn.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        openLb(btn.dataset.img, btn.dataset.title);
+      }
+    });
+  });
+
+  document.querySelectorAll('.cs-step-img-wrap,.cs-final-img-wrap,.cs-ba-scroll-img,.cs-portal-img-wrap').forEach(function(wrap){
+    wrap.addEventListener('click',function(){
+      var btn=wrap.querySelector('.cs-step-expand');
+      if(btn) openLb(btn.dataset.img,btn.dataset.title);
+    });
+  });
+
+  lbClose.addEventListener('click', closeLb);
+  lbBack.addEventListener('click', closeLb);
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && lb.classList.contains('open')) closeLb();
+  });
+})();
+
+(function(){
+  if(!window.IntersectionObserver) return;
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.classList.add('cs-revealed');
+        obs.unobserve(e.target);
+      }
+    });
+  },{threshold:0.05,rootMargin:'0px 0px -16px 0px'});
+  document.querySelectorAll('.cs-section').forEach(function(el){
+    el.classList.add('cs-will-anim');
+    obs.observe(el);
+  });
+})();
+</script>
+
+<script>
+/* ── CASE STUDY NAV: SWITCHER + PROGRESS ── */
+(function(){
+  var STUDIES=[
+    {id:'saaslogic',title:'Saaslogic — Subscription Workflow Redesign',href:'saaslogic.html'},
+    {id:'cargospot',title:'Cargospot — Shipment Creation Workflow Optimization',href:'cargospot.html'},
+    {id:'crm',      title:'CRM — Lead Profile Redesign',href:'crm.html'},
+    {id:'zenith',   title:'Zenith — AI-Assisted E-commerce Admin Console',href:'zenith.html'}
+  ];
+  var nav=document.querySelector('.nav'),main=document.querySelector('.cs-page'),hero=document.querySelector('.cs-hero'),logo=nav&&nav.querySelector('.nav-logo');
+  if(!nav||!hero||!main||!logo)return;
+  var activeId=main.dataset.csId||'',activeStudy=STUDIES.filter(function(s){return s.id===activeId;})[0]||STUDIES[0],logoOrig=logo.textContent;
+
+  var wrap=document.createElement('div');wrap.className='cs-nav-switcher-wrap';
+  var btn=document.createElement('button');btn.className='cs-nav-switcher';btn.type='button';
+  btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-haspopup','listbox');btn.setAttribute('aria-label','Switch case study');
+  var tspan=document.createElement('span');tspan.className='cs-nav-switcher-title';tspan.textContent=activeStudy.title;
+  var svgNS='http://www.w3.org/2000/svg',chev=document.createElementNS(svgNS,'svg');
+  chev.setAttribute('class','cs-nav-chevron');chev.setAttribute('width','10');chev.setAttribute('height','7');
+  chev.setAttribute('viewBox','0 0 10 7');chev.setAttribute('fill','none');chev.setAttribute('stroke','currentColor');
+  chev.setAttribute('stroke-width','1.6');chev.setAttribute('stroke-linecap','round');chev.setAttribute('aria-hidden','true');
+  var cp=document.createElementNS(svgNS,'path');cp.setAttribute('d','M1 1l4 4 4-4');chev.appendChild(cp);
+  btn.appendChild(tspan);btn.appendChild(chev);wrap.appendChild(btn);
+  nav.querySelector('.container').appendChild(wrap);
+
+  var dd=document.createElement('div');dd.className='cs-nav-dropdown';dd.setAttribute('role','listbox');dd.setAttribute('aria-label','Case studies');
+  var lbl=document.createElement('p');lbl.className='cs-nav-dropdown-label';lbl.textContent='Case Studies';dd.appendChild(lbl);
+  STUDIES.forEach(function(s){
+    var a=document.createElement('a');a.className='cs-nav-dropdown-item'+(s.id===activeId?' active':'');
+    a.href=s.href;a.setAttribute('role','option');a.setAttribute('aria-selected',s.id===activeId?'true':'false');
+    var ck=document.createElement('span');ck.className='cs-nav-dropdown-check';ck.setAttribute('aria-hidden','true');ck.textContent=s.id===activeId?'✓':'';
+    var lx=document.createElement('span');lx.textContent=s.title;
+    a.appendChild(ck);a.appendChild(lx);dd.appendChild(a);
+  });
+  var div=document.createElement('div');div.className='cs-nav-dropdown-divider';dd.appendChild(div);
+  var va=document.createElement('a');va.className='cs-nav-dropdown-viewall';va.href='index.html#work';va.textContent='View All Work →';dd.appendChild(va);
+  document.body.appendChild(dd);
+
+  var bar=document.createElement('div');bar.className='cs-reading-progress';document.body.appendChild(bar);
+
+  function posDD(){
+    var r=btn.getBoundingClientRect(),vw=window.innerWidth,cx=r.left+r.width/2;
+    dd.style.top=(r.bottom+6)+'px';dd.style.left=Math.max(148,Math.min(cx,vw-148))+'px';
+  }
+
+  var open=false;
+  function openDD(){if(open)return;open=true;posDD();dd.classList.add('open');btn.setAttribute('aria-expanded','true');}
+  function closeDD(){if(!open)return;open=false;dd.classList.remove('open');btn.setAttribute('aria-expanded','false');}
+  btn.addEventListener('click',function(e){e.stopPropagation();open?closeDD():openDD();});
+  document.addEventListener('click',closeDD);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&open){closeDD();btn.focus();}});
+  window.addEventListener('resize',function(){if(open)posDD();});
+
+  function update(){
+    var past=hero.getBoundingClientRect().bottom<=0;
+    nav.classList.toggle('cs-context',past);
+    bar.classList.toggle('cs-progress-visible',past);
+    logo.textContent=past?'← Portfolio':logoOrig;
+    var dh=document.documentElement.scrollHeight-window.innerHeight;
+    bar.style.width=(dh>0?Math.min(100,window.scrollY/dh*100):0)+'%';
+    if(open)posDD();
+  }
+  window.addEventListener('scroll',update,{passive:true});
+  update();
+})();
+</script>
+</body>
+</html>
