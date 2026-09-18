@@ -843,7 +843,10 @@
   .cs-ba-wrapper{grid-template-columns:1fr}
   .cs-ba-divider{display:none}
   .cs-ba-before-col{border-bottom:1px solid var(--border)}
-  .cs-workflow{justify-content:flex-start}
+  .cs-workflow{flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:0;padding:14px 20px}
+  .cs-workflow-step{flex-direction:row;align-items:center;gap:10px;padding:4px 0}
+  .cs-workflow-arrow{display:block;margin-top:0;font-size:0;padding:1px 0 1px 2px}
+  .cs-workflow-arrow::before{content:'↓';font-size:14px;color:var(--btn-secondary-border);display:block;line-height:1}
   .cs-hero-visual{height:220px}
   .cs-section-heading{font-size:20px}
   .cs-explore{padding-top:52px;padding-bottom:60px}
@@ -853,20 +856,24 @@
 /* ── Phone (≤600px) ── */
 @media(max-width:600px){
   /* Nav link hide handled by style.css */
+  /* Constrain switcher so it doesn't overlap logo or hamburger at narrow widths */
+  .cs-nav-switcher-wrap{max-width:calc(100vw - 190px)}
+  .cs-nav-switcher{max-width:100%}
+
 
   /* Case study hero */
   .cs-hero{padding:24px 0 32px}
   .cs-title{font-size:24px}
-  .cs-subtitle{font-size:13.5px;margin-bottom:24px}
+  .cs-subtitle{font-size:14px;margin-bottom:24px}
   .cs-meta-item{padding:10px 14px}
-  .cs-meta-label{font-size:9.5px}
-  .cs-meta-value{font-size:12.5px}
+  .cs-meta-label{font-size:10.5px}
+  .cs-meta-value{font-size:13px}
 
   /* Case study sections */
   .cs-section{padding:36px 0}
   .cs-final-showcase{padding:28px 0 0}
-  .cs-section-heading{font-size:18px;margin-bottom:16px}
-  .cs-body-text{font-size:13.5px}
+  .cs-section-heading{font-size:19px;margin-bottom:16px}
+  .cs-body-text{font-size:14px}
 
   /* Step images — slightly shorter on phone */
   .cs-step-img-wrap{height:200px}

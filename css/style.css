@@ -78,6 +78,42 @@ html,body{height:100%;background:var(--bg);font-family:'Inter',system-ui,sans-se
 }
 .nav-resume:hover{background:#F4EEE6;border-color:#B28A58;color:#2C2A28}
 
+/* HAMBURGER */
+.nav-hamburger{
+  display:none;
+  background:none;border:none;cursor:pointer;
+  padding:8px 6px;margin:0;
+  flex-direction:column;gap:5px;align-items:center;justify-content:center;
+}
+.nav-hamburger span{
+  display:block;width:22px;height:2px;
+  background:var(--text);border-radius:2px;
+  transition:transform 200ms ease,opacity 200ms ease;
+}
+.nav-hamburger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-hamburger[aria-expanded="true"] span:nth-child(2){opacity:0;transform:scaleX(0)}
+.nav-hamburger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* MOBILE NAV DROPDOWN */
+.nav-mobile-menu{
+  display:none;
+  position:fixed;top:68px;left:0;right:0;z-index:99;
+  background:rgba(252,251,248,.97);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  box-shadow:0 4px 16px rgba(40,35,30,.08);
+  border-top:1px solid rgba(40,35,30,.06);
+}
+.nav-mobile-menu.open{display:block}
+.nav-mobile-link{
+  display:block;
+  padding:14px 20px;
+  font-size:15px;font-weight:500;
+  color:var(--text);text-decoration:none;
+  border-bottom:1px solid rgba(40,35,30,.06);
+}
+.nav-mobile-link:last-child{border-bottom:none}
+.nav-mobile-link:active{background:rgba(178,138,88,.08)}
+
 /* HERO */
 .hero{
   padding-top:52px;padding-bottom:64px;
@@ -365,6 +401,7 @@ html,body{height:100%;background:var(--bg);font-family:'Inter',system-ui,sans-se
 }
 .contact-inner{
   flex:1;display:flex;flex-direction:column;
+  width:100%;
   padding-top:64px;padding-bottom:0;
 }
 .contact-grid{
@@ -470,21 +507,22 @@ html,body{height:100%;background:var(--bg);font-family:'Inter',system-ui,sans-se
 
 /* ── Phone (≤600px) ── */
 @media (max-width:600px){
-  /* Navigation — hide section links, keep logo + View Resume */
+  /* Navigation — hide section links, show hamburger */
   .nav-logo{white-space:nowrap;flex-shrink:0}
   .nav-links .nav-link{display:none}
-  .nav-links{gap:0}
-  .nav-resume{font-size:12px;padding:7px 13px;border-radius:10px;white-space:nowrap}
+  .nav-links{gap:12px}
+  .nav-hamburger{display:flex}
+  .nav-resume{font-size:13px;padding:7px 13px;border-radius:10px;white-space:nowrap}
 
   /* Hero */
   .hero{padding-top:28px;padding-bottom:40px}
   .hero-inner{gap:20px}
-  .hero-name{font-size:32px;margin-bottom:16px}
+  .hero-name{font-size:28px;margin-bottom:16px}
   .portrait{width:130px;height:130px;margin-bottom:12px}
-  .id-name{font-size:13.5px}
-  .id-role{font-size:12px}
+  .id-name{font-size:14px}
+  .id-role{font-size:13px}
   .hero-intro{font-size:14px;margin-bottom:10px}
-  .hero-philosophy{font-size:13.5px;margin-bottom:20px}
+  .hero-philosophy{font-size:14px;margin-bottom:20px}
 
   /* Stats — hide icons, fix 3-across layout */
   .stat-icon{display:none}
@@ -500,29 +538,29 @@ html,body{height:100%;background:var(--bg);font-family:'Inter',system-ui,sans-se
   /* Work section */
   .sec{padding-top:36px;padding-bottom:40px}
   .sec-label{font-size:22px}
-  .sec-desc{font-size:13px;margin-bottom:28px}
+  .sec-desc{font-size:13.5px;margin-bottom:28px}
   .projects{gap:16px}
 
   /* Project cards */
   .proj,.proj-alt{padding:16px;border-radius:12px;gap:14px}
-  .p-name{font-size:19px}
-  .p-desc{font-size:12.5px;margin-bottom:14px}
+  .p-name{font-size:17px}
+  .p-desc{font-size:13px;margin-bottom:14px}
   .pvisual{min-height:180px;border-radius:8px}
-  .p-link{padding-top:18px;font-size:12px}
+  .p-link{padding-top:18px;font-size:12.5px}
 
   /* About */
   .about-sec{min-height:0;display:block}
   .about-inner{padding-top:48px;padding-bottom:52px}
   .about-heading{font-size:22px;margin-bottom:18px;margin-top:8px}
-  .about-bio{font-size:13.5px}
-  .about-skill-item{font-size:12.5px}
+  .about-bio{font-size:14px}
+  .about-skill-item{font-size:13px}
 
   /* Contact */
   .contact-sec{min-height:0}
   .contact-inner{padding-top:48px;padding-bottom:0}
   .contact-heading{font-size:24px;margin-bottom:14px}
-  .contact-text{font-size:13px}
-  .contact-label{font-size:10px;width:72px}
-  .contact-value,.contact-link{font-size:13px}
+  .contact-text{font-size:13.5px}
+  .contact-label{font-size:10.5px;width:72px}
+  .contact-value,.contact-link{font-size:13.5px}
   .contact-item{gap:10px;padding:11px 0}
 }

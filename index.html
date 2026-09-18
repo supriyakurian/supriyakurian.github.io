@@ -17,10 +17,18 @@
       <a class="nav-link" href="#work">Work</a>
       <a class="nav-link" href="#about">About</a>
       <a class="nav-link" href="#contact">Contact</a>
+      <button class="nav-hamburger" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <a class="nav-resume" href="resume.html">View Resume</a>
     </div>
   </div>
 </nav>
+<div class="nav-mobile-menu" id="navMobileMenu">
+  <a class="nav-mobile-link" href="#work">Work</a>
+  <a class="nav-mobile-link" href="#about">About</a>
+  <a class="nav-mobile-link" href="#contact">Contact</a>
+</div>
 
 <section class="hero">
   <div class="container">
@@ -303,5 +311,6 @@
   document.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
 })();
 </script>
+<script src="js/nav-mobile.js"></script>
 </body>
 </html>
